@@ -8,6 +8,13 @@
 
 #import <UIKit/UIKit.h>
 
-@interface UIViewController (SelectDailyDriverMPGController_c)
+@interface SelectDailyDriverMPGController : UIViewController <UIPickerViewDataSource,UIPickerViewDelegate>
+
+@property (strong, nonatomic) IBOutlet UIPickerView *pickerView;
+@property (strong, nonatomic) IBOutlet UILabel *mpg;
+
+@property (strong, nonatomic)          NSArray *years;
+@property (strong, nonatomic)          NSArray *makes;
+@property (strong, nonatomic)          NSArray *models;
 
 @end
