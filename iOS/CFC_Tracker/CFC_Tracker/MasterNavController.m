@@ -73,6 +73,7 @@
     NSLog(@"The last viewed version number: %@", viewedVersionNumber);
     bool signedIntoGoogle = [defaults stringForKey:[MasterNavController signedIntoGoogleKey]];
     // bool downloadedMoves = [defaults stringForKey:[MasterNavController downloadedMovesKey]];
+    bool dailyDriverSet = false;
     
     // because of the dependency on moves, this can only be run on a real phone, which makes testing
     // more difficult, specially for the onboarding flow. So we skip the moves checks if we detect that
@@ -116,6 +117,9 @@
         // tempController.switchMovesButtonsController = YES;
         tempController.hideConnectMovesButtonController = NO;
         tempController.hideDownloadMovesButtonController = YES;
+        [self pushViewController:controller animated:YES];
+    } else if (!dailyDriverSet) {
+        controller = [board instantiateViewControllerWithIdentifier:@"SelectDailyDriverMPGController"];
         [self pushViewController:controller animated:YES];
     } else {
         controller = [board instantiateViewControllerWithIdentifier:@"MasterViewController"];
