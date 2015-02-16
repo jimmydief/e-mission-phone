@@ -10,13 +10,15 @@
 
 @interface SelectDailyDriverMPGController : UIViewController <UIPickerViewDataSource,UIPickerViewDelegate>
 
-@property (strong, nonatomic) IBOutlet UIPickerView *pickerView;
-@property (strong, nonatomic) IBOutlet UILabel *mpg;
-@property (strong, nonatomic) IBOutlet UILabel *explanation;
+@property (strong, nonatomic) IBOutlet UIPickerView *modelPicker;
+@property (strong, nonatomic) IBOutlet UIPickerView *optionPicker;
+@property (strong, nonatomic) IBOutlet UILabel *explanationLabel;
+@property (strong, nonatomic) IBOutlet UILabel *selectOptionLabel;
 @property (strong, nonatomic) IBOutlet UIButton *doneBtn;
 
 @property (strong, nonatomic)          NSArray *years;
 @property (strong, nonatomic)          NSArray *makes;
 @property (strong, nonatomic)          NSArray *models;
+@property (strong, nonatomic)          NSArray *options;
 
 @end

@@ -312,18 +312,6 @@
                                     <outlet property="delegate" destination="x7h-LU-Cpv" id="JCc-ND-iIY"/>
                                 </connections>
                             </pickerView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="MPG" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4E4-NZ-vC5">
-                                <rect key="frame" x="150" y="402" width="39" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V9I-ks-ieE">
-                                <rect key="frame" x="132" y="402" width="10" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nB6-Sk-jMw">
                                 <rect key="frame" x="0.0" y="508" width="320" height="60"/>
                                 <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -340,7 +328,16 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Please select your most frequently used vehicle so that we can better calculate your carbon footprint" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ylh-kF-Zi0">
-                                <rect key="frame" x="8" y="70" width="304" height="70"/>
+                                <rect key="frame" x="8" y="85" width="304" height="70"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QYh-7O-8QM">
+                                <rect key="frame" x="0.0" y="351" width="320" height="162"/>
+                            </pickerView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Select your option" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dHT-YT-Tfg">
+                                <rect key="frame" x="90" y="341" width="140" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
@@ -350,9 +347,10 @@
                     </view>
                     <connections>
                         <outlet property="doneBtn" destination="nB6-Sk-jMw" id="956-XA-hDf"/>
-                        <outlet property="explanation" destination="Ylh-kF-Zi0" id="Lfv-ut-0wH"/>
-                        <outlet property="mpg" destination="V9I-ks-ieE" id="IXA-o3-uTZ"/>
+                        <outlet property="explanation" destination="dHT-YT-Tfg" id="f3E-f1-OkK"/>
+                        <outlet property="optionPicker" destination="QYh-7O-8QM" id="QCp-vm-Ed6"/>
                         <outlet property="pickerView" destination="SZK-1m-5go" id="nCr-Le-HaG"/>
+                        <outlet property="selectOptionLabel" destination="dHT-YT-Tfg" id="f4H-Z9-4HZ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GxU-OM-KAn" userLabel="First Responder" sceneMemberID="firstResponder"/>
