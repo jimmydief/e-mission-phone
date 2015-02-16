@@ -21,7 +21,7 @@ const NSString* API_BASE_URL = @"http://www.fueleconomy.gov/ws/rest/vehicle/menu
 // returns the # of rows in each component..
 - (NSInteger) pickerView: (UIPickerView *) pickerView numberOfRowsInComponent: (NSInteger) component
 {
-    if (pickerView == self.modelPicker) {
+    if ([pickerView isEqual: self.modelPicker]) {
         switch (component) {
             case 0:
                 return 6; // [self.years count];
@@ -52,7 +52,7 @@ const NSString* API_BASE_URL = @"http://www.fueleconomy.gov/ws/rest/vehicle/menu
 }
 
 - (CGFloat)pickerView:(UIPickerView *)pickerView widthForComponent:(NSInteger)component{
-    if (pickerView == self.modelPicker) {
+    if ([pickerView isEqual: self.modelPicker]) {
         switch (component){
             case 0:
                 return 65.0f;
@@ -68,7 +68,7 @@ const NSString* API_BASE_URL = @"http://www.fueleconomy.gov/ws/rest/vehicle/menu
 
 -(NSString *)pickerView:(UIPickerView *)pickerView titleForRow:(NSInteger)row forComponent:(NSInteger)component
 {
-    if (pickerView == self.modelPicker) {
+    if ([pickerView isEqual: self.modelPicker]) {
         switch (component) {
             case 0:
                 return [self.years objectAtIndex:row];
@@ -84,7 +84,7 @@ const NSString* API_BASE_URL = @"http://www.fueleconomy.gov/ws/rest/vehicle/menu
 
 - (void)pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component
 {
-    if (pickerView == self.modelPicker) {
+    if ([pickerView isEqual: self.modelPicker]) {
         NSInteger yearRow = [self.modelPicker selectedRowInComponent:0];
         NSInteger makeRow = [self.modelPicker selectedRowInComponent:1];
         NSInteger modelRow = [self.modelPicker selectedRowInComponent:2];
@@ -123,7 +123,7 @@ const NSString* API_BASE_URL = @"http://www.fueleconomy.gov/ws/rest/vehicle/menu
     
     url = [API_BASE_URL stringByAppendingString:path];
     
-    [self.modelPicker reloadAllComponents];
+    // [self.modelPicker reloadAllComponents];
     // [pickerView selectRow:0 inComponent:0 animated:YES];
 }
 
