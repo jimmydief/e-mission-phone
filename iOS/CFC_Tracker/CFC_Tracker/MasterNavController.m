@@ -118,9 +118,9 @@
         tempController.hideConnectMovesButtonController = NO;
         tempController.hideDownloadMovesButtonController = YES;
         [self pushViewController:controller animated:YES];
-//    } else if (!dailyDriverSet) {
-//        controller = [board instantiateViewControllerWithIdentifier:@"SelectDailyDriverMPGController"];
-//        [self pushViewController:controller animated:YES];
+    } else if (!dailyDriverSet) {
+        controller = [board instantiateViewControllerWithIdentifier:@"SelectDailyDriverMPGController"];
+        [self pushViewController:controller animated:YES];
     } else {
         controller = [board instantiateViewControllerWithIdentifier:@"MasterViewController"];
         [self setViewControllers:[[NSArray alloc] initWithObjects:controller, nil] animated:YES]; // for coming out of onboarding process

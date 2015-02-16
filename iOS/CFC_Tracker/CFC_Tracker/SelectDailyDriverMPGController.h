@@ -12,6 +12,8 @@
 
 @property (strong, nonatomic) IBOutlet UIPickerView *pickerView;
 @property (strong, nonatomic) IBOutlet UILabel *mpg;
+@property (strong, nonatomic) IBOutlet UILabel *explanation;
+@property (strong, nonatomic) IBOutlet UIButton *doneBtn;
 
 @property (strong, nonatomic)          NSArray *years;
 @property (strong, nonatomic)          NSArray *makes;
