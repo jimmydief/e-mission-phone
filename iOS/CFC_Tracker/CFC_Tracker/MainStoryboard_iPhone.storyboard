@@ -305,13 +305,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SZK-1m-5go" userLabel="Select Vehicle Year">
-                                <rect key="frame" x="0.0" y="188" width="320" height="162"/>
-                                <connections>
-                                    <outlet property="dataSource" destination="x7h-LU-Cpv" id="0md-9R-zIJ"/>
-                                    <outlet property="delegate" destination="x7h-LU-Cpv" id="JCc-ND-iIY"/>
-                                </connections>
-                            </pickerView>
                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nB6-Sk-jMw">
                                 <rect key="frame" x="0.0" y="508" width="320" height="60"/>
                                 <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -335,6 +328,10 @@
                             </label>
                             <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QYh-7O-8QM">
                                 <rect key="frame" x="0.0" y="351" width="320" height="162"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="x7h-LU-Cpv" id="FG8-A8-fO4"/>
+                                    <outlet property="delegate" destination="x7h-LU-Cpv" id="R6n-7w-f73"/>
+                                </connections>
                             </pickerView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Select your option" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dHT-YT-Tfg">
                                 <rect key="frame" x="90" y="341" width="140" height="21"/>
@@ -342,14 +339,21 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SZK-1m-5go" userLabel="Select Vehicle Year">
+                                <rect key="frame" x="0.0" y="171" width="320" height="162"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="x7h-LU-Cpv" id="0md-9R-zIJ"/>
+                                    <outlet property="delegate" destination="x7h-LU-Cpv" id="JCc-ND-iIY"/>
+                                </connections>
+                            </pickerView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <connections>
                         <outlet property="doneBtn" destination="nB6-Sk-jMw" id="956-XA-hDf"/>
-                        <outlet property="explanation" destination="dHT-YT-Tfg" id="f3E-f1-OkK"/>
+                        <outlet property="explanationLabel" destination="Ylh-kF-Zi0" id="H75-rL-u0O"/>
+                        <outlet property="modelPicker" destination="SZK-1m-5go" id="3uk-cm-Ihw"/>
                         <outlet property="optionPicker" destination="QYh-7O-8QM" id="QCp-vm-Ed6"/>
-                        <outlet property="pickerView" destination="SZK-1m-5go" id="nCr-Le-HaG"/>
                         <outlet property="selectOptionLabel" destination="dHT-YT-Tfg" id="f4H-Z9-4HZ"/>
                     </connections>
                 </viewController>
