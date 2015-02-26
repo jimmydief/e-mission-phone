@@ -320,41 +320,11 @@
                                     <action selector="onGetStarted:" destination="x8g-OT-sb0" eventType="touchUpInside" id="hct-Mm-6iQ"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Please select your most frequently used vehicle so that we can better calculate your carbon footprint" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ylh-kF-Zi0">
-                                <rect key="frame" x="8" y="85" width="304" height="70"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QYh-7O-8QM">
-                                <rect key="frame" x="0.0" y="351" width="320" height="162"/>
-                                <connections>
-                                    <outlet property="dataSource" destination="x7h-LU-Cpv" id="FG8-A8-fO4"/>
-                                    <outlet property="delegate" destination="x7h-LU-Cpv" id="R6n-7w-f73"/>
-                                </connections>
-                            </pickerView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Select your option" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dHT-YT-Tfg">
-                                <rect key="frame" x="90" y="341" width="140" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SZK-1m-5go" userLabel="Select Vehicle Year">
-                                <rect key="frame" x="0.0" y="171" width="320" height="162"/>
-                                <connections>
-                                    <outlet property="dataSource" destination="x7h-LU-Cpv" id="0md-9R-zIJ"/>
-                                    <outlet property="delegate" destination="x7h-LU-Cpv" id="JCc-ND-iIY"/>
-                                </connections>
-                            </pickerView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <connections>
                         <outlet property="doneBtn" destination="nB6-Sk-jMw" id="956-XA-hDf"/>
-                        <outlet property="explanationLabel" destination="Ylh-kF-Zi0" id="H75-rL-u0O"/>
-                        <outlet property="modelPicker" destination="SZK-1m-5go" id="3uk-cm-Ihw"/>
-                        <outlet property="optionPicker" destination="QYh-7O-8QM" id="QCp-vm-Ed6"/>
-                        <outlet property="selectOptionLabel" destination="dHT-YT-Tfg" id="f4H-Z9-4HZ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GxU-OM-KAn" userLabel="First Responder" sceneMemberID="firstResponder"/>

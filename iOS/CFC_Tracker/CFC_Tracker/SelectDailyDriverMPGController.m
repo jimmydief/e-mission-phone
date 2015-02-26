@@ -7,6 +7,7 @@
 //
 
 #import "SelectDailyDriverMPGController.h"
+#import "FuelEconomyParseOperation.h"
 
 const NSString* API_BASE_URL = @"http://www.fueleconomy.gov/ws/rest/vehicle/menu/";
 
@@ -49,6 +50,8 @@ const NSString* API_BASE_URL = @"http://www.fueleconomy.gov/ws/rest/vehicle/menu
     self.models = [[NSArray alloc] initWithObjects: @"Camry", @"Civic", @"Accord", @"Civic Hybrid", nil];
     
     self.options = [[NSArray alloc] initWithObjects: @"Dope", @"Meh", nil];
+    
+    
 }
 
 - (CGFloat)pickerView:(UIPickerView *)pickerView widthForComponent:(NSInteger)component{
@@ -93,49 +96,71 @@ const NSString* API_BASE_URL = @"http://www.fueleconomy.gov/ws/rest/vehicle/menu
         NSString* make = [self.makes objectAtIndex:makeRow];
         NSString* model = [self.models objectAtIndex:modelRow];
         
-        [SelectDailyDriverMPGController setPickerFields:component forYear:year forMake:make forModel:model];
+        [SelectDailyDriverMPGController setPickerFields:component
+                                                forYear:year
+                                                forMake:make
+                                               forModel:model
+                                         forModelPicker:self.modelPicker
+                                        forOptionPicker:self.optionPicker];
     } else {
-        // nothing
+        // change MPG value
     }
 }
 
-+ (void) setPickerFields: (NSInteger)columnChanged forYear:(NSString*)year forMake:(NSString*)make forModel:(NSString*)model
++ (void) setPickerFields: (NSInteger)columnChanged forYear:(NSString*)year forMake:(NSString*)make forModel:(NSString*)model forModelPicker:(UIPickerView*)modelPicker forOptionPicker:(UIPickerView*)optionPicker
 {
     NSString* path;
     NSArray* components;
     switch (columnChanged) {
         case 0:
-            // update make, model, and options
+            // year changed
             path = [@"make?year=" stringByAppendingString:year];
             break;
         case 1:
-            // update model and options
+            // make changed
             components = [[NSArray alloc] initWithObjects:@"model?year=", year, @"&make=", make, nil];
             path = [components componentsJoinedByString:@""];
             break;
         default:
-            // update options
+            // model changed
             components = [[NSArray alloc] initWithObjects:@"options?year=", year, @"&make=", make, @"&model=", model, nil];
             path = [components componentsJoinedByString:@""];
-            break;
     }
     
     NSString* urlString = [API_BASE_URL stringByAppendingString:path];
-    NSURL* url = [NSURL URLWithString:urlString];
-    NSDictionary* results = [SelectDailyDriverMPGController updateDataFromXML:url];
     
     NSLog (urlString);
     
-    NSLog(@"%@", results);
+    NSURL* url = [NSURL URLWithString:urlString];
+    
+    NSURLRequest* urlRequest = [[NSMutableURLRequest alloc] initWithURL:url];
+    
+    [NSURLConnection sendAsynchronousRequest:urlRequest queue:[NSOperationQueue mainQueue] completionHandler:^(NSURLResponse *response, NSData *data, NSError *connectionError) {
+        if (data) {
+            [[FuelEconomyParseOperation alloc] initWithData:data];
+        } else {
+            NSLog(@"Error = %@", connectionError);
+        }
+    }];
+}
+
++ (void) updatePickers: (NSInteger)columnChanged forText:(NSMutableArray*)textEntries forValues:(NSMutableArray*)valueEntries
+{
+    switch (columnChanged) {
+        case 0:
+            // update make, model, and options
+            break;
+        case 1:
+            // update // model and options
+            break;
+        default:
+            // update options
+            break; //unnecessary
+            
+    }
     
     // [self.modelPicker reloadAllComponents];
     // [pickerView selectRow:0 inComponent:0 animated:YES];
-}
-
-+ (NSDictionary*) updateDataFromXML: (NSURL*)url
-{
-    NSDictionary* results = (NSDictionary*) [NSDictionary dictionaryWithContentsOfURL:url];
-    return results;
 }
 
 @end
