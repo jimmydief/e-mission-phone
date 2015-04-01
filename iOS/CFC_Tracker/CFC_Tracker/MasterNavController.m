@@ -119,7 +119,7 @@
         tempController.hideDownloadMovesButtonController = YES;
         [self pushViewController:controller animated:YES];
     } else if (!dailyDriverSet) {
-        controller = [board instantiateViewControllerWithIdentifier:@"SelectDailyDriverMPGController"];
+        controller = [board instantiateViewControllerWithIdentifier:@"SelectDailyDriverYearViewController"];
         [self pushViewController:controller animated:YES];
     } else {
         controller = [board instantiateViewControllerWithIdentifier:@"MasterViewController"];

@@ -45,10 +45,12 @@
 		ACFD74851968DCD100ADDAAA /* EMissionTerms.html in Resources */ = {isa = PBXBuildFile; fileRef = ACFD74841968DCD100ADDAAA /* EMissionTerms.html */; };
 		ACFD74871968DD7800ADDAAA /* EMission_small.png in Resources */ = {isa = PBXBuildFile; fileRef = ACFD74861968DD7800ADDAAA /* EMission_small.png */; };
 		ACFD74891968DDE900ADDAAA /* Moves_small.png in Resources */ = {isa = PBXBuildFile; fileRef = ACFD74881968DDE900ADDAAA /* Moves_small.png */; };
-		BF0F3D8C1A9BD1DC00ED5A47 /* GoogleOpenSource.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF0F3D8B1A9BD1DC00ED5A47 /* GoogleOpenSource.framework */; };
 		BF0F3D8F1A9D38DE00ED5A47 /* FuelEconomyParseOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = BF0F3D8E1A9D38DE00ED5A47 /* FuelEconomyParseOperation.m */; };
+		BF0F3D921AA5AD6400ED5A47 /* SelectDailyDriverMakeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF0F3D911AA5AD6400ED5A47 /* SelectDailyDriverMakeViewController.m */; };
+		BF0F3D951AA5AD7700ED5A47 /* SelectDailyDriverModelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF0F3D941AA5AD7700ED5A47 /* SelectDailyDriverModelViewController.m */; };
+		BF0F3D981AA5AD8800ED5A47 /* SelectDailyDriverOptionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF0F3D971AA5AD8800ED5A47 /* SelectDailyDriverOptionViewController.m */; };
 		BF2C637A1A8FE64A00ADFB78 /* connect.plist in Resources */ = {isa = PBXBuildFile; fileRef = BF2C63791A8FE64A00ADFB78 /* connect.plist */; };
-		BF2C637E1A91B10C00ADFB78 /* SelectDailyDriverMPGController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF2C637D1A91B10C00ADFB78 /* SelectDailyDriverMPGController.m */; };
+		BF2C637E1A91B10C00ADFB78 /* SelectDailyDriverYearViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF2C637D1A91B10C00ADFB78 /* SelectDailyDriverYearViewController.m */; };
 		D0059FD418E1EEA100E9ED2C /* TripSectionDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = D0059FD318E1EEA100E9ED2C /* TripSectionDatabase.m */; };
 		D008E4F11A04138E00228241 /* OngoingTripsManual.db in Resources */ = {isa = PBXBuildFile; fileRef = D008E4F01A04138E00228241 /* OngoingTripsManual.db */; };
 		D00B237518E5578400525184 /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D00B237418E5578400525184 /* AddressBook.framework */; };
@@ -170,12 +172,17 @@
 		ACFD74841968DCD100ADDAAA /* EMissionTerms.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = EMissionTerms.html; sourceTree = "<group>"; };
 		ACFD74861968DD7800ADDAAA /* EMission_small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = EMission_small.png; sourceTree = "<group>"; };
 		ACFD74881968DDE900ADDAAA /* Moves_small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Moves_small.png; sourceTree = "<group>"; };
-		BF0F3D8B1A9BD1DC00ED5A47 /* GoogleOpenSource.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleOpenSource.framework; path = "../../../google-plus-ios-sdk-1.7.1/GoogleOpenSource.framework"; sourceTree = "<group>"; };
 		BF0F3D8D1A9D38DE00ED5A47 /* FuelEconomyParseOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FuelEconomyParseOperation.h; sourceTree = "<group>"; };
 		BF0F3D8E1A9D38DE00ED5A47 /* FuelEconomyParseOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FuelEconomyParseOperation.m; sourceTree = "<group>"; };
+		BF0F3D901AA5AD6400ED5A47 /* SelectDailyDriverMakeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelectDailyDriverMakeViewController.h; sourceTree = "<group>"; };
+		BF0F3D911AA5AD6400ED5A47 /* SelectDailyDriverMakeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SelectDailyDriverMakeViewController.m; sourceTree = "<group>"; };
+		BF0F3D931AA5AD7700ED5A47 /* SelectDailyDriverModelViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelectDailyDriverModelViewController.h; sourceTree = "<group>"; };
+		BF0F3D941AA5AD7700ED5A47 /* SelectDailyDriverModelViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SelectDailyDriverModelViewController.m; sourceTree = "<group>"; };
+		BF0F3D961AA5AD8800ED5A47 /* SelectDailyDriverOptionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelectDailyDriverOptionViewController.h; sourceTree = "<group>"; };
+		BF0F3D971AA5AD8800ED5A47 /* SelectDailyDriverOptionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SelectDailyDriverOptionViewController.m; sourceTree = "<group>"; };
 		BF2C63791A8FE64A00ADFB78 /* connect.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = connect.plist; path = ../../../../connect.plist; sourceTree = "<group>"; };
-		BF2C637C1A91B10C00ADFB78 /* SelectDailyDriverMPGController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelectDailyDriverMPGController.h; sourceTree = "<group>"; };
-		BF2C637D1A91B10C00ADFB78 /* SelectDailyDriverMPGController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SelectDailyDriverMPGController.m; sourceTree = "<group>"; };
+		BF2C637C1A91B10C00ADFB78 /* SelectDailyDriverYearViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelectDailyDriverYearViewController.h; sourceTree = "<group>"; };
+		BF2C637D1A91B10C00ADFB78 /* SelectDailyDriverYearViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SelectDailyDriverYearViewController.m; sourceTree = "<group>"; };
 		D0059FD218E1EEA100E9ED2C /* TripSectionDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TripSectionDatabase.h; sourceTree = "<group>"; };
 		D0059FD318E1EEA100E9ED2C /* TripSectionDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TripSectionDatabase.m; sourceTree = "<group>"; };
 		D008E4F01A04138E00228241 /* OngoingTripsManual.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = OngoingTripsManual.db; sourceTree = "<group>"; };
@@ -279,7 +286,6 @@
 				D00B237918E557A900525184 /* CoreLocation.framework in Frameworks */,
 				D00B237718E5579B00525184 /* AssetsLibrary.framework in Frameworks */,
 				D00B237518E5578400525184 /* AddressBook.framework in Frameworks */,
-				BF0F3D8C1A9BD1DC00ED5A47 /* GoogleOpenSource.framework in Frameworks */,
 				D0B9C73918E268C6006903E6 /* libsqlite3.dylib in Frameworks */,
 				D0F2FA4818DF5AEA000FF723 /* UIKit.framework in Frameworks */,
 				D0F2FA4A18DF5AEA000FF723 /* Foundation.framework in Frameworks */,
@@ -393,7 +399,6 @@
 		D0F2FA4618DF5AEA000FF723 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				BF0F3D8B1A9BD1DC00ED5A47 /* GoogleOpenSource.framework */,
 				D0CF984619CC9F170063714B /* XCTest.framework */,
 				ACBA855D19A9324400C09509 /* CoreImage.framework */,
 				ACBE2E90193F96000086424E /* QuartzCore.framework */,
@@ -438,8 +443,14 @@
 				ACA05CFE1991587200F56EB3 /* MasterNavController.m */,
 				ACA05CFA1991536C00F56EB3 /* SetUpViewController.h */,
 				ACA05CFB1991536C00F56EB3 /* SetUpViewController.m */,
-				BF2C637C1A91B10C00ADFB78 /* SelectDailyDriverMPGController.h */,
-				BF2C637D1A91B10C00ADFB78 /* SelectDailyDriverMPGController.m */,
+				BF2C637C1A91B10C00ADFB78 /* SelectDailyDriverYearViewController.h */,
+				BF2C637D1A91B10C00ADFB78 /* SelectDailyDriverYearViewController.m */,
+				BF0F3D901AA5AD6400ED5A47 /* SelectDailyDriverMakeViewController.h */,
+				BF0F3D911AA5AD6400ED5A47 /* SelectDailyDriverMakeViewController.m */,
+				BF0F3D931AA5AD7700ED5A47 /* SelectDailyDriverModelViewController.h */,
+				BF0F3D941AA5AD7700ED5A47 /* SelectDailyDriverModelViewController.m */,
+				BF0F3D961AA5AD8800ED5A47 /* SelectDailyDriverOptionViewController.h */,
+				BF0F3D971AA5AD8800ED5A47 /* SelectDailyDriverOptionViewController.m */,
 				D0F2FA6518DF5AEB000FF723 /* MasterViewController.h */,
 				D0F2FA6618DF5AEB000FF723 /* MasterViewController.m */,
 				D0F2FA6818DF5AEB000FF723 /* DetailViewController.h */,
@@ -694,13 +705,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				ACBE2E94193FA7C00086424E /* PopupTableViewController.m in Sources */,
+				BF0F3D981AA5AD8800ED5A47 /* SelectDailyDriverOptionViewController.m in Sources */,
 				ACA05CFF1991587200F56EB3 /* MasterNavController.m in Sources */,
 				ACE8EBD919E8D3CD00E57250 /* CustomSettings.m in Sources */,
 				D0FB8E701A0395BE0087797F /* ManualTripController.m in Sources */,
 				ACBA858019A977FC00C09509 /* ActionSheetCustomPicker.m in Sources */,
-				BF2C637E1A91B10C00ADFB78 /* SelectDailyDriverMPGController.m in Sources */,
+				BF2C637E1A91B10C00ADFB78 /* SelectDailyDriverYearViewController.m in Sources */,
 				D08F56F119A9A27300468D77 /* ConnectionSettings.m in Sources */,
 				D00B248918E60C7F00525184 /* SignInViewController.m in Sources */,
+				BF0F3D921AA5AD6400ED5A47 /* SelectDailyDriverMakeViewController.m in Sources */,
 				D0E096C618EDAEAA00AFC763 /* AuthCompletionHandler.m in Sources */,
 				D0710E4C18E03249000D26F7 /* TrackLocation.m in Sources */,
 				ACBA858219A977FC00C09509 /* ActionSheetDistancePicker.m in Sources */,
@@ -725,6 +738,7 @@
 				AC44E5E019914B4D00E7C397 /* ConsentViewController.m in Sources */,
 				D0F2FA6A18DF5AEB000FF723 /* DetailViewController.m in Sources */,
 				BF0F3D8F1A9D38DE00ED5A47 /* FuelEconomyParseOperation.m in Sources */,
+				BF0F3D951AA5AD7700ED5A47 /* SelectDailyDriverModelViewController.m in Sources */,
 				D0F2FA8A18DF66B6000FF723 /* TripSection.m in Sources */,
 				D059F8BB18F5DC8700AB044B /* Constants.m in Sources */,
 				ACBE2E8F193F95CF0086424E /* WYStoryboardPopoverSegue.m in Sources */,
@@ -913,6 +927,15 @@
 					/Users/Jimmy/Documents/College/Senior,
 					Year/CS,
 					"194-27/google-plus-ios-sdk-1.7.1",
+					/Users/Jimmy/Documents/College/Senior,
+					Year/CS,
+					"194-27/google-plus-ios-sdk-1.7.1",
+					/Users/Jimmy/Documents/College/Senior,
+					Year/CS,
+					"194-27/google-plus-ios-sdk-1.7.1",
+					/Users/Jimmy/Documents/College/Senior,
+					Year/CS,
+					"194-27/google-plus-ios-sdk-1.7.1",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CFC_Tracker/E-Mission-Prefix.pch";
@@ -939,6 +962,15 @@
 					"$(PROJECT_DIR)",
 					"$(PROJECT_DIR)/CFC_Tracker",
 					"/Users/Jimmy/Downloads/google-plus-ios-sdk-1.7.1",
+					/Users/Jimmy/Documents/College/Senior,
+					Year/CS,
+					"194-27/google-plus-ios-sdk-1.7.1",
+					/Users/Jimmy/Documents/College/Senior,
+					Year/CS,
+					"194-27/google-plus-ios-sdk-1.7.1",
+					/Users/Jimmy/Documents/College/Senior,
+					Year/CS,
+					"194-27/google-plus-ios-sdk-1.7.1",
 					/Users/Jimmy/Documents/College/Senior,
 					Year/CS,
 					"194-27/google-plus-ios-sdk-1.7.1",
