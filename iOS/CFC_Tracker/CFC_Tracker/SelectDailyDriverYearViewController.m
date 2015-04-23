@@ -8,8 +8,7 @@
 
 #import "SelectDailyDriverYearViewController.h"
 #import "FuelEconomyParseOperation.h"
-
-const NSString* API_BASE_URL = @"http://www.fueleconomy.gov/ws/rest/vehicle/menu/";
+#import "SelectDailyDriverAPI.h"
 
 @implementation SelectDailyDriverYearViewController : UITableViewController
 

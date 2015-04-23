@@ -51,6 +51,8 @@
 		BF0F3D921AA5AD6400ED5A47 /* SelectDailyDriverMakeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF0F3D911AA5AD6400ED5A47 /* SelectDailyDriverMakeViewController.m */; };
 		BF0F3D951AA5AD7700ED5A47 /* SelectDailyDriverModelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF0F3D941AA5AD7700ED5A47 /* SelectDailyDriverModelViewController.m */; };
 		BF0F3D981AA5AD8800ED5A47 /* SelectDailyDriverOptionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF0F3D971AA5AD8800ED5A47 /* SelectDailyDriverOptionViewController.m */; };
+		BF25B2A01ACB732800416895 /* GoogleOpenSource.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF25B29F1ACB732800416895 /* GoogleOpenSource.framework */; };
+		BF25B2A81ACB746900416895 /* SelectDailyDriverAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = BF25B2A71ACB746900416895 /* SelectDailyDriverAPI.m */; };
 		BF2C637A1A8FE64A00ADFB78 /* connect.plist in Resources */ = {isa = PBXBuildFile; fileRef = BF2C63791A8FE64A00ADFB78 /* connect.plist */; };
 		BF2C637E1A91B10C00ADFB78 /* SelectDailyDriverYearViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF2C637D1A91B10C00ADFB78 /* SelectDailyDriverYearViewController.m */; };
 		D0059FD418E1EEA100E9ED2C /* TripSectionDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = D0059FD318E1EEA100E9ED2C /* TripSectionDatabase.m */; };
@@ -186,6 +188,9 @@
 		BF0F3D941AA5AD7700ED5A47 /* SelectDailyDriverModelViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SelectDailyDriverModelViewController.m; sourceTree = "<group>"; };
 		BF0F3D961AA5AD8800ED5A47 /* SelectDailyDriverOptionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelectDailyDriverOptionViewController.h; sourceTree = "<group>"; };
 		BF0F3D971AA5AD8800ED5A47 /* SelectDailyDriverOptionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SelectDailyDriverOptionViewController.m; sourceTree = "<group>"; };
+		BF25B29F1ACB732800416895 /* GoogleOpenSource.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleOpenSource.framework; sourceTree = "<group>"; };
+		BF25B2A61ACB746900416895 /* SelectDailyDriverAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SelectDailyDriverAPI.h; path = ../SelectDailyDriverAPI.h; sourceTree = "<group>"; };
+		BF25B2A71ACB746900416895 /* SelectDailyDriverAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SelectDailyDriverAPI.m; path = ../SelectDailyDriverAPI.m; sourceTree = "<group>"; };
 		BF2C63791A8FE64A00ADFB78 /* connect.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = connect.plist; path = ../../../../connect.plist; sourceTree = "<group>"; };
 		BF2C637C1A91B10C00ADFB78 /* SelectDailyDriverYearViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelectDailyDriverYearViewController.h; sourceTree = "<group>"; };
 		BF2C637D1A91B10C00ADFB78 /* SelectDailyDriverYearViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SelectDailyDriverYearViewController.m; sourceTree = "<group>"; };
@@ -292,6 +297,7 @@
 				D00B237918E557A900525184 /* CoreLocation.framework in Frameworks */,
 				D00B237718E5579B00525184 /* AssetsLibrary.framework in Frameworks */,
 				D00B237518E5578400525184 /* AddressBook.framework in Frameworks */,
+				BF25B2A01ACB732800416895 /* GoogleOpenSource.framework in Frameworks */,
 				D0B9C73918E268C6006903E6 /* libsqlite3.dylib in Frameworks */,
 				D0F2FA4818DF5AEA000FF723 /* UIKit.framework in Frameworks */,
 				D0F2FA4A18DF5AEA000FF723 /* Foundation.framework in Frameworks */,
@@ -417,6 +423,7 @@
 			isa = PBXGroup;
 			children = (
 				D0CF984619CC9F170063714B /* XCTest.framework */,
+				BF25B29F1ACB732800416895 /* GoogleOpenSource.framework */,
 				ACBA855D19A9324400C09509 /* CoreImage.framework */,
 				ACBE2E90193F96000086424E /* QuartzCore.framework */,
 				D06910C418E6948900CCD32D /* MapKit.framework */,
@@ -460,6 +467,8 @@
 				ACA05CFE1991587200F56EB3 /* MasterNavController.m */,
 				ACA05CFA1991536C00F56EB3 /* SetUpViewController.h */,
 				ACA05CFB1991536C00F56EB3 /* SetUpViewController.m */,
+				BF25B2A61ACB746900416895 /* SelectDailyDriverAPI.h */,
+				BF25B2A71ACB746900416895 /* SelectDailyDriverAPI.m */,
 				BF2C637C1A91B10C00ADFB78 /* SelectDailyDriverYearViewController.h */,
 				BF2C637D1A91B10C00ADFB78 /* SelectDailyDriverYearViewController.m */,
 				BF0F3D901AA5AD6400ED5A47 /* SelectDailyDriverMakeViewController.h */,
@@ -743,6 +752,7 @@
 				D09EA85318FB6D1400949DA5 /* HTMLDisplayCommunicationHelper.m in Sources */,
 				072D1B981A8C3D860067B0A2 /* NJKWebViewProgressView.m in Sources */,
 				ACBA858319A977FC00C09509 /* ActionSheetLocalePicker.m in Sources */,
+				BF25B2A81ACB746900416895 /* SelectDailyDriverAPI.m in Sources */,
 				D0F2FA5418DF5AEA000FF723 /* main.m in Sources */,
 				ACA05CFC1991536C00F56EB3 /* SetUpViewController.m in Sources */,
 				D0F2FA5818DF5AEB000FF723 /* AppDelegate.m in Sources */,
